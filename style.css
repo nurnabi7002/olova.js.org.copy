@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+  @font-face {
+       font-family: 'Poppins';
+       src: url('Poppins-SemiBold.ttf') format('truetype');
+   }
+
+body {
+  background-color: rgb(27, 26, 31);
+}
+
+
+
+/*Nav Bar*/
+
+nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ndl {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  gap: 7px;
+}
+
+.ndr {
+  width: 30%;
+
+}
+
+nav .ndl img {
+  height: 20px;
+}
+
+/*Nav Menu Icon Div*/
+
+.menu {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 30;
+  top: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scale(-0.8);
+}
+
+.nl {
+  background: white;
+  transition: 0.2s;
+}
+
+.m1 {
+  height: 3px;
+  width: 17px;
+}
+
+.m2 {
+ height: 3px;
+  width: 10px;
+}
+
+.m3 {
+ width: 25px;
+ height: 3px;
+}
+
+.menu:hover {
+  .m3 {
+    width: 17px;
+  }
+  
+  .m2 {
+   transition: 0.2s;
+   width: 25px;
+  }
+  
+  .m1 {
+    transition: 0.2s;
+    width: 10px;
+  }
+}
+
+.nava {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.nava a {
+  text-decoration: none;
+}
+
+
+
+
+/*Body*/
+
+.hc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 90%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hel {
+  width: 50%;
+}
+
+
+.her {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Button*/
+
+.bdiv {
+  gap: 10px;
+}
+
+.btn {
+  padding: 11px;
+  border: none;
+  border-radius: 50px;
+
+}
+
+.b1 {
+  background: rgb(0, 191, 98);
+}
+
+.b2 {
+ background: rgb(50, 54, 63);
+}
+
+
+.heroimg {
+  height: 170px;
+  
+}
+
+.hish {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgb(14, 124, 110);
+  box-shadow: 0px 0px 80px 80px rgb(14, 124, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+
+
+
+/*Responsive Design*/
+
+
+
+@media (max-width: 670px) {
+  .nava a {
+    display: none;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    gap: 80px;
+  }
+  
+
+    .hel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .her {
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  .bdiv {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+
+
+@media (min-width: 670px) {
+  .menu {
+    display: none;
+  }
+  
+  
+}
+
+
+
+/*Card */
+
+
+.cc {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  height: 130px;
+  width: 70vw;
+  padding: 40px;
+  background: rgb(32, 33, 38);
+  border-radius: 15px;
+  
+}
+
+
+.fssh {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.fsst {
+  font-size: 12px;
+  
+}
+
+.imgpd {
+  padding: 12px;
+  background: rgb(43, 48, 54);
+  width: 20px;
+  border-radius: 9px;
+  transform: scale(1.5)
+}
+
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+
+
+@media (min-width: 670px) {
+  
+
+  .cc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 30px;
+    transform: scale(0.85);
+    
+}
+  
+  .card {
+    height: 180px;
+    width: 250px;
+    padding: 30;
+    
+  }
+  
+  .hel {
+    margin-left: 6%;
+
+  }
+  
+    .her {
+    margin-left: -10%;
+    transform: scale(1.24);
+  }
+
+
+footer {
+  position: absolute;
+}
+
+
+}
